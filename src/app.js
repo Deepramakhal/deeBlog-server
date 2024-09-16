@@ -8,7 +8,7 @@ import cors from "cors"
 const app = express()
 
 app.use(cors({
-    origin: "https://deeblog.vercel.app/" || process.env.CORS_ORIGIN
+    origin: "https://deeblog.vercel.app" || process.env.CORS_ORIGIN
 }))
 
 app.use(express.json())
