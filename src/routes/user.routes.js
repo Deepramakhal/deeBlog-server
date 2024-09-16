@@ -6,7 +6,7 @@ import { loginUser, logoutUser, refreshAccessToken, registerUser, updatePassword
 const router = Router()
 
 router.route("/register").post(
-    upload.fields(
+    upload.single(
         [
             {
                 name: "profilePicture",
